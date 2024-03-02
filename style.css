@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+:root {
+  --body-color: 48 48 58;
+  
+  --font-color: 255 255 255;
+  --highlight-color: 0 0 0;
+  
+  --theme-background: 20 20 20;
+  
+  --theme-light: 0 0 0;
+  --theme-medium: 0 0 0;
+  --theme-dark: 0 0 0;
+}
+
+body {
+  background-color: rgb(var(--body-color));
+  margin: 0px;
+  font-family: 'Source Code Pro';
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgb(var(--theme-background));
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+section{
+  font-family: 'Source Code Pro';
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+section .h01{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+
+section header ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section header ul li{
+  list-style: none;
+  margin-left: 20px;
+}
+section header ul li a{
+  color: #111;
+  text-decoration: none;
+  font-size: 13px;
+}
+section header ul li button{
+  background: #4584ef;
+  border: none;
+  outline: none;
+  padding: 8px 14px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+}
+section .main{
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+  width: 680px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.code{
+  font-size: 35px;
+}
+
+#google-logo {
+  margin-left: -5rem;
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 70px;
+  font-weight: 600;
+  color: #4285F4;
+  text-align: center;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+}
+
+#google-logo span {
+  color: #EA4335;
+}
+
+#google-logo .bold{
+  font-family: 'Source Code Pro';
+  font-size: 40px;
+  color: #00A67E;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+#google-logo .blue{
+  color: #4285F4;
+}
+
+#google-logo .yellow {
+  color: #FBBC05;
+}
+
+#google-logo .green {
+  color: #34A853;
+}
+
+section .main .searchbox{
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+section .main .searchbox .search{
+  font-family: 'Source Code Pro';
+  color: white;
+  background-color: rgb(255 255 255 / 10%);
+  border: none !important;;
+  /* box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25); */
+  width: 98%;
+  padding: 13px;
+  padding-left: 60px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+
+section .main .searchbox .search::-webkit-input-placeholder{
+  font-family: 'Source Code Pro';
+}
+
+section .main .searchbox .icons{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  padding: 12px 30px;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+}
+
+section .main #s02{
+  margin-top: 30px;
+}
+
+section .main #s01{
+  margin-top: 50px;
+}
+
+section .main .shortcuts{
+  display: flex;
+  gap: 20px;
+}
+
+section .main .shortcuts a{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #fff;
+  /* background-color: #111; */
+  background-color: rgb(255 255 255 / 2%);
+  border-radius: 10px;
+  align-items: center;
+  padding: 12px 30px;
+  /* box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25); */
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+
+section .main .shortcuts a:hover{
+  opacity: 70%;
+}
+
+section .main .shortcuts .yt:hover{
+  color: #282828;
+}
+
+section .main .shortcuts .gh:hover{
+  color: gray;
+}
+
+section .main .shortcuts .cgpt:hover{
+  color: #00A67E;
+}
+
+section .main .shortcuts .soverflow:hover{
+  color: #BCBBBB;
+}
+
+section .main .shortcuts .dev:hover{
+  color: black;
+}
+
+section .main .shortcuts .Hashnode:hover{
+  color: #3062ff;
+}
+
+section .main .shortcuts .codewars:hover{
+  color: #F44F5A;
+}
+section .main .shortcuts .hackerrank:hover{
+  color: #c2cb43;
+}
+section .main .shortcuts .codewars:hover{
+  color: #F44F5A;
+}
+
+section .main .shortcuts i,section .main .shortcuts img,section .main .shortcuts svg{
+  font-size: 36px;
+  width: 36px;
+}
+
+/* Desktop 
+@media (min-width:1024px){
+
+}
+
+
+@media (min-width:769px) and (max-width:1023px){
+  section header ul li button{
+      background-color: tomato;
+  }
+}
+
+
+
+
+@media (max-width:768px){
+  section .main .searchbox .search{
+      width: 78%;
+  }
+  section .main .searchbox .icons{
+      width: 84%;
+  }
+  section .footer .row ul{
+      display: block;
+  }
+  section header ul li button{
+      background-color: blue;
+  }
+} */
+
+/* Desktop */
+@media (min-width: 1024px) {
+  /* Add any desktop-specific styles here */
+}
+
+/* Tablet View */
+@media (min-width: 769px) and (max-width: 1023px) {
+  section .main {
+    width: 80%;
+  }
+  section header ul li button {
+    background-color: tomato;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  section .main {
+    width: 90%;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+  #google-logo {
+    margin-left: -2rem;
+    font-size: 40px;
+  }
+  section header ul {
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+  section header ul li {
+    margin-left: 10px;
+  }
+  section .main .searchbox .search {
+    width: 90%;
+    padding: 10px;
+    padding-left: 40px;
+    font-size: 14px;
+  }
+  section .main .searchbox .icons {
+    width: 100%;
+    padding: 10px;
+  }
+  section .main .shortcuts {
+    margin-top: 20px;
+    gap: 10px;
+  }
+  section .main .shortcuts a {
+    padding: 6px 20px;
+  }
+  section .main .shortcuts i {
+    font-size: 32px;
+  }
+}
