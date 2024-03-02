@@ -191,9 +191,14 @@ section .main .shortcuts a{
   background-color: rgb(255 255 255 / 2%);
   border-radius: 10px;
   align-items: center;
-  padding: 12px 30px;
+  padding: 14px 28px;
   /* box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25); */
   box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+
+section .main .shortcuts i,section .main .shortcuts img,section .main .shortcuts svg{
+  font-size: 32px;
+  width: 32px;
 }
 
 section .main .shortcuts a:hover{
@@ -211,6 +216,7 @@ section .main .shortcuts .gh:hover{
 section .main .shortcuts .cgpt:hover{
   color: #00A67E;
 }
+
 
 section .main .shortcuts .soverflow:hover{
   color: #BCBBBB;
@@ -234,10 +240,6 @@ section .main .shortcuts .codewars:hover{
   color: #F44F5A;
 }
 
-section .main .shortcuts i,section .main .shortcuts img,section .main .shortcuts svg{
-  font-size: 36px;
-  width: 36px;
-}
 
 /* Desktop 
 @media (min-width:1024px){
