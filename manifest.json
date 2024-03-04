@@ -1,15 +1,25 @@
 {
     "manifest_version": 2,
-    "name": "Custom New Tab Extension",
+    "name": "Custom New Tab Developers Edition",
     "version": "1.0",
     "description": "Customize your new tab page with this extension.",
     "permissions": ["storage"],
     "chrome_url_overrides": {
       "newtab": "newtab.html"
     },
+
+    "icon":{
+      "48": "icon.png"
+    },
     
     "browser_action": {
-      "default_title": "Custom New Tab"
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      },
+
+      "default_title": "New Tab"
     }
   }
   
